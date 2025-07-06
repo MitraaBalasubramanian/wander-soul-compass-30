@@ -264,9 +264,9 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Profile Avatar */}
-            <Avatar className="w-10 h-10 ring-2 ring-primary/20 cursor-pointer hover:ring-primary/40 transition-all" onClick={() => setActiveTab('profile')}>
-              <AvatarImage src="/placeholder.svg" alt="Profile" />
+            {/* Profile Avatar - Updated with cute girl image */}
+            <Avatar className="w-12 h-12 ring-2 ring-primary/20 cursor-pointer hover:ring-primary/40 transition-all shadow-lg" onClick={() => setActiveTab('profile')}>
+              <AvatarImage src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face" alt="Profile" />
               <AvatarFallback className="bg-primary/10 text-primary text-sm font-semibold">
                 A
               </AvatarFallback>

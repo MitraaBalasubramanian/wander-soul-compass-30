@@ -67,22 +67,23 @@ const EmergencySOS = () => {
 
   return (
     <>
-      {/* Floating Emergency Button */}
+      {/* Floating Emergency Button - Made Bigger and More Prominent */}
       <div className="fixed bottom-6 right-6 z-50 animate-[gentle-float_3s_ease-in-out_infinite]">
         <Button
           onClick={() => setIsExpanded(!isExpanded)}
           className={`
-            w-12 h-12 rounded-full shadow-xl transition-all duration-300 hover:scale-110
+            w-16 h-16 rounded-full shadow-2xl transition-all duration-300 hover:scale-110
             ${isActivated 
-              ? 'bg-red-500 hover:bg-red-600 animate-pulse' 
-              : 'bg-red-600 hover:bg-red-700'
+              ? 'bg-red-500 hover:bg-red-600 animate-pulse ring-4 ring-red-300/50' 
+              : 'bg-red-600 hover:bg-red-700 ring-4 ring-red-200/50'
             }
-            text-white border-2 border-white/20 backdrop-blur-sm
+            text-white border-4 border-white/30 backdrop-blur-sm
+            shadow-red-500/30 drop-shadow-2xl
           `}
         >
-          <Shield className="w-5 h-5" />
-          <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-[10px] text-red-600 font-medium bg-white/90 px-2 py-0.5 rounded-full">
-            sos
+          <Shield className="w-7 h-7" />
+          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-red-600 font-semibold bg-white/95 px-3 py-1 rounded-full shadow-lg animate-pulse">
+            SOS
           </span>
         </Button>
       </div>
