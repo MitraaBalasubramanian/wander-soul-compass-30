@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Heart, MapPin, Headphones, Trophy, Users, BookOpen, Compass, ChevronRight, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -264,9 +263,9 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Profile Avatar - Updated with cute girl image */}
+            {/* Profile Avatar - Updated with single girl image */}
             <Avatar className="w-12 h-12 ring-2 ring-primary/20 cursor-pointer hover:ring-primary/40 transition-all shadow-lg" onClick={() => setActiveTab('profile')}>
-              <AvatarImage src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face" alt="Profile" />
+              <AvatarImage src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face" alt="Profile" />
               <AvatarFallback className="bg-primary/10 text-primary text-sm font-semibold">
                 A
               </AvatarFallback>

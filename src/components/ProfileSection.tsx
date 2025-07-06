@@ -12,7 +12,7 @@ const ProfileSection = () => {
       <CardHeader className="pb-4">
         <div className="flex items-center space-x-4">
           <Avatar className="w-16 h-16 ring-2 ring-wanderheart-sage ring-offset-2">
-            <AvatarImage src="/placeholder.svg" alt="Profile" />
+            <AvatarImage src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face" alt="Profile" />
             <AvatarFallback className="bg-wanderheart-sage text-white text-lg font-semibold">
               A
             </AvatarFallback>
