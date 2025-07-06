@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === 'development' && await import('lovable-tagger').then(m => m.default()),
   ].filter(Boolean),
   resolve: {
     alias: {
